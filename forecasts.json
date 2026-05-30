@@ -1,0 +1,77 @@
+{
+  "_note": "Live forecast record. Append-only: never edit a resolved entry's issued fields; log a new FCST- id instead. Set verification.repo_url and anchor_url once the public repo and OpenTimestamps proof exist.",
+  "log_opened": "2026-05-28",
+  "last_updated": "2026-05-28",
+  "verification": {
+    "repo_url": "",
+    "anchor_label": "OpenTimestamps proof",
+    "anchor_url": "",
+    "anchor_note": "Each forecast is SHA-256 hashed at issue time. A public repo + weekly OpenTimestamps anchor of this file is pending setup; links appear here once live."
+  },
+  "forecasts": [
+    {
+      "id": "FCST-0001",
+      "issued_utc": "2026-05-28T14:00:00Z",
+      "domain": "defi-infra",
+      "statement": "Pendle Principal Token collateral held in Aave V3 remains above $3B on 2026-12-31.",
+      "resolution_criteria": "Aave V3 risk analytics or a public Dune dashboard reports Pendle PT (sUSDe and successor PT) collateral in Aave V3 at or above $3,000,000,000 on 2026-12-31.",
+      "resolves_by": "2026-12-31",
+      "probability": 68,
+      "base_rate": "~$4B mid-2026 per Research Log Week 03. Tests whether the recursive-leverage structure stays intact rather than unwinding.",
+      "reasoning_ref": "https://medium.com/@gfofofficial/federation-research-log-week-03-80887aa0938f",
+      "content_hash": "8a35517bae6b8189affc390e5fc0e6163bbdfd30b74de83fbc14fff80eca566c",
+      "status": "open",
+      "resolved_utc": null,
+      "outcome": null,
+      "resolution_note": null
+    },
+    {
+      "id": "FCST-0002",
+      "issued_utc": "2026-05-28T14:00:00Z",
+      "domain": "defi-infra",
+      "statement": "Aggregate BTC+ETH perpetual funding stays at or below zero for at least 7 consecutive days at some point before 2026-12-31.",
+      "resolution_criteria": "Coinglass aggregated BTC+ETH perpetual funding (averaged) reads at or below 0% for 7 or more consecutive days within the window.",
+      "resolves_by": "2026-12-31",
+      "probability": 55,
+      "base_rate": "Occurred briefly March 2026; recurs in bear phases. This is the reflexivity trigger named in Week 03 — observed, not a cascade prediction.",
+      "reasoning_ref": "https://medium.com/@gfofofficial/federation-research-log-week-03-80887aa0938f",
+      "content_hash": "a12a2b4ef09dd5945cbc68c44c9e9e692cda225f01dc2f66dcf7b0ba3ee638ab",
+      "status": "open",
+      "resolved_utc": null,
+      "outcome": null,
+      "resolution_note": null
+    },
+    {
+      "id": "FCST-0003",
+      "issued_utc": "2026-05-28T14:00:00Z",
+      "domain": "defi-infra",
+      "statement": "Aave governance executes at least one reduction to the max LTV or supply cap of a Pendle PT-sUSDe collateral type before 2026-12-31.",
+      "resolution_criteria": "An executed Aave governance proposal (Snapshot vote plus on-chain execution) lowers the max LTV or supply cap of a Pendle PT-sUSDe collateral type within the window.",
+      "resolves_by": "2026-12-31",
+      "probability": 62,
+      "base_rate": "Aave risk teams iterate parameters routinely; rising PT concentration already flagged in their risk reviews. Tests whether the exposure is real enough to act on.",
+      "reasoning_ref": "https://medium.com/@gfofofficial/federation-research-log-week-03-80887aa0938f",
+      "content_hash": "c2e1c9525ecb42e033ac07831a5ea365ec4641112f27ca62181611f0c520a76d",
+      "status": "open",
+      "resolved_utc": null,
+      "outcome": null,
+      "resolution_note": null
+    },
+    {
+      "id": "FCST-0004",
+      "issued_utc": "2026-05-28T14:00:00Z",
+      "domain": "stablecoins",
+      "statement": "Pendle Finance TVL remains majority sUSDe/USDe-derived (>50%) on 2026-09-30.",
+      "resolution_criteria": "DefiLlama Pendle TVL breakdown shows more than 50% of Pendle TVL in sUSDe/USDe-linked PT/YT markets on 2026-09-30.",
+      "resolves_by": "2026-09-30",
+      "probability": 72,
+      "base_rate": "~75% as of Week 03. Tests the single-yield-source concentration that makes the loop reflexive.",
+      "reasoning_ref": "https://medium.com/@gfofofficial/federation-research-log-week-03-80887aa0938f",
+      "content_hash": "088d9975b0cd076c5f466711c378291a9b451e3266aefdb0483d18e0a1f2f230",
+      "status": "open",
+      "resolved_utc": null,
+      "outcome": null,
+      "resolution_note": null
+    }
+  ]
+}
